@@ -1,5 +1,7 @@
 {
   "name": "jas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
