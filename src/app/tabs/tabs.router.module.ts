@@ -48,7 +48,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab5',
+        path: 'info',
         children: [
           {
             path: '',
