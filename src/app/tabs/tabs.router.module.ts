@@ -8,65 +8,65 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'my-jas',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+              import('../my-jas/my-jas.module').then(m => m.MyJasPageModule)
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'events',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+              import('../events/events.module').then(m => m.EventsPageModule)
           }
         ]
       },
       {
-        path: 'tab3',
+        path: 'home',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+              import('../home/home.module').then(m => m.HomePageModule)
           }
         ]
       },
       {
-        path: 'tab4',
+        path: 'naja',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab4/tab4.module').then(m => m.Tab4PageModule)
+              import('../naja/naja.module').then(m => m.NajaPageModule)
           }
         ]
       },
       {
-        path: 'tab5',
+        path: 'info',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab5/tab5.module').then(m => m.Tab5PageModule)
+              import('../info/info.module').then(m => m.InfoPageModule)
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
