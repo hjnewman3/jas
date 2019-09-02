@@ -14,4 +14,4 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class Tab3PageModule {}
+export class HomePageModule {}
