@@ -38,12 +38,12 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab4',
+        path: 'naja',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab4/tab4.module').then(m => m.Tab4PageModule)
+              import('../naja/naja.module').then(m => m.NajaPageModule)
           }
         ]
       },
