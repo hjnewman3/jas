@@ -53,20 +53,20 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../tab5/tab5.module').then(m => m.Tab5PageModule)
+              import('../info/info.module').then(m => m.InfoPageModule)
           }
         ]
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
