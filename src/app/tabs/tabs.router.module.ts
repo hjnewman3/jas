@@ -13,7 +13,7 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+              import('../my-jas/my-jas.module').then(m => m.MyJasPageModule)
           }
         ]
       },
