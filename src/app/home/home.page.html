@@ -6,4 +6,71 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <div class="homePageGrid">
+
+        <ion-grid>
+
+            <ion-row>
+                <ion-col class="col-1:1">
+                    <a href="javascript:void(0)" id="projects">
+                        <ion-card (click)="goToProjectsPage()">
+                            <img src="../assets/images/jas.jpg" />
+                            <div class="card-title">OUR PROJECTS</div>
+                        </ion-card>
+                    </a>
+                </ion-col>
+
+                <ion-col class="col-2:1">
+                        <a href="javascript:void(0)" id="fundraisers">
+                            <ion-card (click)="goToFundraisersPage()">
+                                <img src="../assets/images/jas.jpg" />
+                                <div class="card-title">FUNDRAISERS</div>
+                            </ion-card>
+                        </a>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                    <ion-col class="col-1:2">
+                        <a href="javascript:void(0)" id="events">
+                            <ion-card (click)="goToEventsPage()">
+                                <img src="../assets/images/jas.jpg" />
+                                <div class="card-title">UPCOMING EVENTS</div>
+                            </ion-card>
+                        </a>
+                    </ion-col>
+    
+                    <ion-col class="col-2:2">
+                            <a href="javascript:void(0)" id="who-we-are">
+                                <ion-card (click)="goToWhoWeArePage()">
+                                    <img src="../assets/images/jas.jpg" />
+                                    <div class="card-title">WHO WE ARE</div>
+                                </ion-card>
+                            </a>
+                    </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col class="col-1:3">
+                        <a href="javascript:void(0)" id="donate">
+                            <ion-card (click)="goToDonatePage()">
+                                <img src="../assets/images/jas.jpg" />
+                                <div class="card-title">DONATE</div>
+                            </ion-card>
+                        </a>
+                    </ion-col>
+    
+                    <ion-col class="col-2:3">
+                            <a href="javascript:void(0)" id="sponsors">
+                                <ion-card (click)="goToSponsorsPage()">
+                                    <img src="../assets/images/jas.jpg" />
+                                    <div class="card-title">SPONSORS</div>
+                                </ion-card>
+                            </a>
+                </ion-col>
+            </ion-row>
+
+        </ion-grid>
+    </div>
+</ion-content>
